@@ -44,9 +44,13 @@ class Main extends CI_Controller {
 			$crud->set_theme('datatables');
 			$crud->set_table('master_participant');
 			$crud->set_relation('organization_id','master_remaja_masjid','name');
-			$crud->display_as('organization_id','Nama Remaja Masjid');
+			$crud->display_as('organization_id','Nama Organisasi');
+			$crud->display_as('checklist','Status Kehadiran');
 			$crud->set_subject('Peserta');
 			$crud->required_fields('name');
+			$crud->unset_add_fields("checklist");
+			//$crud->unset_edit_fields("checklist");
+			//$crud->unset_columns("checklist");
 			$crud->unset_clone();
 			//$crud->set_field_upload('file_url','assets/uploads/files');
 

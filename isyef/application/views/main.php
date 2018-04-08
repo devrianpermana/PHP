@@ -13,7 +13,7 @@ foreach($css_files as $file): ?>
 	<img src="<?php echo base_url();?>/assets/uploads/files/isyef-logo.jpg" height="15%" width="15%"/>
 	<div class="topnav">
 		<a href='<?php echo site_url('main/participants_management')?>'>Peserta</a>
-		<a href='<?php echo site_url('main/organizations_management')?>'>Remaja Masjid</a>		
+		<a href='<?php echo site_url('main/organizations_management')?>'>Organisasi</a>		
 	</div>
     <div style="padding: 10px">
 		<?php echo $output; ?>
